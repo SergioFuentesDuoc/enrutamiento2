@@ -1,0 +1,29 @@
+<!-- Se mueve todo de la actividad anterior a MisDatos -->
+<!-- Comienza el Header -->
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>
+      SkeletonAPP
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-segment value="perfil" (ionChange)="segmentChanged($event)">
+      <ion-segment-button  value="perfil">
+        <ion-icon name="home"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="experiencias">
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="certificaciones">
+        <ion-icon name="school-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+<!-- Termina el Header -->
+
+<ion-content>
+  <!-- Aquí se desplegara todos los Component que se declararon como children en
+  HomePageModule -->
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
